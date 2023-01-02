@@ -1,4 +1,4 @@
-//Two Sum
+//Two Sum - Two Pointer Problem
 const twoSum = (nums, target) => {
     for (let i = 0; i < nums.length; i++) {
         for (let j = i + 1; j < nums.length; j++) {
@@ -8,9 +8,10 @@ const twoSum = (nums, target) => {
         }
     }
 };
+
 console.log(twoSum([1, 3, 2, 5, 8, 3], 10));
 
-
+ 
 //Find Median of a sorted array
 const findMedianSortedArrays = (nums1, nums2) => {
     let joined = nums1.concat(nums2).sort((a, b) => a - b);
@@ -117,7 +118,6 @@ const threeSum = function(nums) {
 console.log(threeSum([-1, 0, 1, 2, -1, -4]));
 
 //Rewrite of 3Sum
-
 const threeSumRewrite = (array) => {
     let result = [];
     array.sort((a, b) => a - b);
